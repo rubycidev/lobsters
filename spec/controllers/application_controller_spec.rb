@@ -43,6 +43,26 @@ describe ApplicationController do
       expect(response).to have_http_status(:not_found)
     end
 
+    it "requesting valid format from respond_to works" do
+      get :with_respond_to, format: :html
+      expect(response).to have_http_status(:ok)
+      get :with_respond_to
+      expect(response).to have_http_status(:ok)
+    end
+
+    it "requesting valid format from render call worksworks" do
+      get :with_render, format: :html
+      expect(response).to have_http_status(:ok)
+      get :with_render
+      expect(response).to have_http_status(:ok)
+    end
+
+    it "this should fail" do
+      get :with_respond_to, format: :rss
+      expect(response).to have_http_status(:ok)
+    end
+
+
     xit "requesting unhandled format from render fails" do
       get :with_render, format: :rss
       expect(response).to have_http_status(:not_found)
