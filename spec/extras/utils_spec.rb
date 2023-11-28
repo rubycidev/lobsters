@@ -8,4 +8,10 @@ describe Utils do
       expect(Utils.methods).to include(:silence_stream)
     end
   end
+  describe 'dot ENV variable' do
+   it 'has the correct value' do
+     expect(ENV['VARIABLE_NAME']).to eq('expected_value')
+   end
+  end
+
 end
