@@ -10,7 +10,7 @@ describe Utils do
   end
   describe 'dot ENV variable' do
    it 'has the correct value' do
-     expect(ENV['VARIABLE_NAME']).to eq('expected_value')
+     expect(ENV['TEST_DOT_ENV']).to eq('test dot env available')
    end
   end
 
