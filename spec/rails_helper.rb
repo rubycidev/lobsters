@@ -6,6 +6,8 @@ require File.expand_path("../../config/environment", __FILE__)
 require "rspec/rails"
 require "simplecov"
 require "super_diff/rspec-rails"
+require 'dotenv/load'
+Dotenv.load
 
 SimpleCov.start "rails"
 # Requires supporting ruby files with custom matchers and macros, etc,
