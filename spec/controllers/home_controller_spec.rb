@@ -33,6 +33,11 @@ describe HomeController do
         get :upvoted, as: :rss, params: {token: user.rss_token}
         expect(response).to be_successful
       end
+
+      it "test new commit with docker V5" do
+        get :upvoted, as: :rss, params: {token: user.rss_token}
+        expect(response).to be_successful
+      end
     end
   end
 end
