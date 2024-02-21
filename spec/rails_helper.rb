@@ -5,6 +5,7 @@ ENV["RAILS_ENV"] ||= "test"
 require File.expand_path("../../config/environment", __FILE__)
 require "rspec/rails"
 require "simplecov"
+require "ruby_ci/simple_cov"
 require "super_diff/rspec-rails"
 
 SimpleCov.start "rails"
