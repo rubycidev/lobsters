@@ -43,6 +43,7 @@ gem "mail" # for parsing incoming mail
 gem "sitemap_generator" # for better search engine indexing
 gem "svg-graph", require: "SVG/Graph/TimeSeries" # for charting, note workaround in lib/time_series.rb
 gem "rack-attack" # rate-limiting
+gem 'ruby_ci'
 
 group :test, :development do
   gem "benchmark-perf"
@@ -62,5 +63,4 @@ group :test, :development do
   gem "vcr"
   gem "webmock" # used to support vcr
   gem "simplecov", require: false
-  gem 'ruby_ci'
 end
