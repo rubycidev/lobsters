@@ -45,6 +45,7 @@ gem "svg-graph", require: "SVG/Graph/TimeSeries" # for charting, note workaround
 gem "rack-attack" # rate-limiting
 gem "lograge" # for JSON logging
 gem "silencer" # to disable default logging in prod
+gem "ruby_ci"
 
 group :test, :development do
   gem "benchmark-perf"
