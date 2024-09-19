@@ -53,6 +53,7 @@ group :test, :development do
   gem "capybara"
   gem "database_cleaner"
   gem "listen"
+  gem "letter_opener"
   gem "rspec-rails"
   gem "factory_bot_rails"
   gem "standard"
