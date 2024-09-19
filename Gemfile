@@ -4,6 +4,7 @@ gem "rails"
 
 gem "trilogy"
 
+
 # rails
 gem "scenic"
 gem "scenic-mysql_adapter"
